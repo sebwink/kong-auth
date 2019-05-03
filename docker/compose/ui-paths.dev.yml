@@ -1,0 +1,11 @@
+version: "3"
+services:
+  kong-auth-ui:
+    build: 
+      context: ../../ui
+      dockerfile: ./docker/dev/Dockerfile
+    volumes:
+      - '../../ui/src:/app/src'
+      - '../../ui/public:/app/public'
+      - '../../ui/config:/app/config'
+      - '../../ui/scripts:/app/scripts'

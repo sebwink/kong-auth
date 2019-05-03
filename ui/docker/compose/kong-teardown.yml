@@ -1,0 +1,6 @@
+version: "3"
+services:
+  kong-auth-ui-kong-teardown:
+    image: sebwink/kong-auth-ui-kong-teardown 
+    build:
+      context: ../kong-teardown 

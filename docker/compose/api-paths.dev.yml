@@ -1,0 +1,11 @@
+version: "3"
+services:
+  kong-auth-api:
+    build: 
+      context: ../../api
+      dockerfile: ./docker/dev/Dockerfile
+    env_file:
+      - '../../api/.secrets/dev.env'
+    volumes:
+      - '../../api/src:/app/src'
+      - '../../api/.secrets:/app/.secrets'

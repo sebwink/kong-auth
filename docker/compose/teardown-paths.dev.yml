@@ -1,0 +1,8 @@
+version: "3"
+services:
+  kong-auth-api-kong-teardown:
+    build:
+      context: ../../api/docker/kong-teardown 
+  kong-auth-ui-kong-teardown:
+    build:
+      context: ../../ui/docker/kong-teardown 

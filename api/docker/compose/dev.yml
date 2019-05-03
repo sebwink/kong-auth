@@ -1,0 +1,12 @@
+version: "3"
+services:
+  kong-auth-api:
+    image: sebwink/kong-auth-api
+    build: 
+      context: ../..
+      dockerfile: ./docker/dev/Dockerfile
+    env_file:
+      - '../../.secrets/dev.env'
+    volumes:
+      - '../../src:/app/src'
+      - '../../.secrets:/app/.secrets'

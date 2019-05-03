@@ -1,0 +1,6 @@
+version: "3"
+services:
+  kong-auth-api-kong-setup:
+    image: sebwink/kong-auth-api-kong-setup 
+    build:
+      context: ../kong-setup 

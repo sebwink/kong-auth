@@ -1,0 +1,4 @@
+version: "3"
+services:
+  kong-auth-api:
+    image: sebwink/kong-auth-api

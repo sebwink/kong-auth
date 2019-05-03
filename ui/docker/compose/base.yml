@@ -1,0 +1,6 @@
+version: "3"
+services:
+  kong-auth-ui:
+    image: sebwink/kong-auth-ui
+    environment:
+      PUBLIC_URL: /auth/ui
